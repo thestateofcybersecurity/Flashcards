@@ -1474,8 +1474,19 @@ const flashcards = [
     }
 ];
     
-    let currentFlashcardIndex = 0;
-    let currentFlashcard = flashcards[0];
+let currentFlashcardIndex = 0;
+
+    // Shuffle the flashcards array using the Fisher-Yates algorithm
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    shuffleArray(flashcards); // Shuffle the questions once at the beginning
+
+    let currentFlashcard = flashcards[currentFlashcardIndex];
 
     const questionElement = document.getElementById('question');
     const answerElement = document.getElementById('answer');
@@ -1536,7 +1547,7 @@ const flashcards = [
 
     function showAnswer() {
         answerElement.textContent = currentFlashcard.answer ? escapeHTML(currentFlashcard.answer) : 'No answer provided.';
-        answerElement.style.display = 'block';
+        answerElement.style.display = 'block'
     }
 
     function nextQuestion() {
