@@ -22,8 +22,8 @@ body {
     background-color: var(--bg-color-light);
     color: var(--text-color-light);
     transition: background-color 0.3s, color 0.3s;
-    justify-content: center; /* Centers the content vertically */
-    align-items: center;     /* Centers the content horizontally */
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
@@ -46,7 +46,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     justify-items: center;
-    justify-content: center; /* Centers the grid horizontally */
+    justify-content: center;
 }
 
 .category-card {
@@ -159,11 +159,12 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
-    background-color: var(--bg-color-light);
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove any border */
 }
 
 .share-buttons {
-    background-color: transparent; /* Remove background color */
+    background-color: transparent; /* Ensure no background color */
     text-align: center;
 }
 
