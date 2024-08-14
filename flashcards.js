@@ -1490,7 +1490,6 @@ const flashcards = [
     const nextQuestionButton = document.getElementById('next-question');
 
     function loadFlashcard(index) {
-        // Validate index to prevent out-of-bound access
         if (index < 0 || index >= flashcards.length) {
             console.error('Invalid flashcard index');
             return;
@@ -1500,9 +1499,7 @@ const flashcards = [
         resultElement.textContent = '';
         questionElement.textContent = escapeHTML(currentFlashcard.question);
 
-        // Check if the flashcard is traditional or multiple-choice
         if (currentFlashcard.choices) {
-            // Multiple-choice flashcard
             answerElement.style.display = 'none';
             showAnswerButton.style.display = 'none';
             choiceButtons.forEach((button, i) => {
@@ -1516,7 +1513,6 @@ const flashcards = [
                 }
             });
         } else {
-            // Traditional flashcard
             answerElement.textContent = '';
             answerElement.style.display = 'none';
             showAnswerButton.style.display = 'inline-block';
@@ -1535,7 +1531,6 @@ const flashcards = [
             resultElement.textContent = `Incorrect! The correct answer is ${escapeHTML(currentFlashcard.correctAnswer)}.`;
             event.target.classList.add('incorrect');
         }
-        // Disable all choice buttons after a selection is made
         choiceButtons.forEach(button => button.disabled = true);
     }
 
@@ -1550,7 +1545,6 @@ const flashcards = [
     }
 
     function escapeHTML(str) {
-        // Escapes any potential HTML tags or script content in user-supplied strings
         return str.replace(/[&<>"']/g, function (char) {
             const escapeChars = {
                 '&': '&amp;',
@@ -1570,7 +1564,6 @@ const flashcards = [
     showAnswerButton.addEventListener('click', showAnswer);
     nextQuestionButton.addEventListener('click', nextQuestion);
 
-    // Initial load with validation
     if (flashcards.length > 0) {
         loadFlashcard(currentFlashcardIndex);
     } else {
