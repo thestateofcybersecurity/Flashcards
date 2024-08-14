@@ -151,18 +151,52 @@ button:disabled {
     background-color: var(--button-hover-bg);
 }
 
+/* Social Buttons Styling */
+.share-buttons {
+    background-color: var(--bg-color-light);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid var(--category-hover-bg);
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.share-buttons p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.share-buttons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.share-buttons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.share-buttons a:hover img {
+    transform: scale(1.1);
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--bg-color-dark);
         color: var(--text-color-dark);
     }
 
-    #flashcard-container, .category-card {
+    #flashcard-container, .category-card, .share-buttons {
         background-color: var(--bg-color-dark);
         box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     }
 
-    .question, .answer, h1, h2 {
+    .question, .answer, h1, h2, .share-buttons p {
         color: var(--text-color-dark);
     }
 
@@ -185,7 +219,7 @@ button:disabled {
         color: var(--text-color-light);
     }
 
-    .category-card, #flashcard-container {
+    .category-card, #flashcard-container, .share-buttons {
         background-color: var(--category-bg);
     }
 
@@ -193,7 +227,7 @@ button:disabled {
         background-color: var(--category-hover-bg);
     }
 
-    .question, .answer, h1, h2 {
+    .question, .answer, h1, h2, .share-buttons p {
         color: var(--text-color-light);
     }
 
