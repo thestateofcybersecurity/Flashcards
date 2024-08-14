@@ -16,8 +16,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     margin: 0;
     background-color: var(--bg-color-light);
@@ -32,6 +31,7 @@ body {
     box-sizing: border-box;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
+    flex: 1;
 }
 
 h1 {
@@ -157,16 +157,13 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
+    background-color: var(--bg-color-light);
+    border-top: 1px solid var(--category-hover-bg);
 }
 
 .share-buttons {
     background-color: var(--bg-color-light);
-    padding: 20px;
     text-align: center;
-    border-top: 1px solid var(--category-hover-bg);
-    margin-top: 20px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
 }
 
 .share-buttons p {
