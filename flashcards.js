@@ -1499,6 +1499,14 @@ const flashcards = [
     const resultElement = document.getElementById('result');
     const showAnswerButton = document.getElementById('show-answer');
     const nextQuestionButton = document.getElementById('next-question');
+    const progressElement = document.getElementById('progress');
+
+    // Load user progress from localStorage
+    let userProgress = JSON.parse(localStorage.getItem('userProgress')) || { correct: 0, total: 0 };
+
+    function updateProgress() {
+        progressElement.textContent = `Correct Answers: ${userProgress.correct} / ${userProgress.total}`;
+    }
 
     function loadFlashcard(index) {
         if (index < 0 || index >= flashcards.length) {
@@ -1535,14 +1543,21 @@ const flashcards = [
 
     function handleChoiceClick(event) {
         const selectedChoice = event.target.textContent;
+        userProgress.total++;
         if (selectedChoice === currentFlashcard.correctAnswer) {
             resultElement.textContent = 'Correct!';
             event.target.classList.add('correct');
+            userProgress.correct++;
         } else {
             resultElement.textContent = `Incorrect! The correct answer is ${escapeHTML(currentFlashcard.correctAnswer)}.`;
             event.target.classList.add('incorrect');
         }
         choiceButtons.forEach(button => button.disabled = true);
+
+        // Save progress to localStorage
+        localStorage.setItem('userProgress', JSON.stringify(userProgress));
+
+        updateProgress();
     }
 
     function showAnswer() {
@@ -1575,9 +1590,13 @@ const flashcards = [
     showAnswerButton.addEventListener('click', showAnswer);
     nextQuestionButton.addEventListener('click', nextQuestion);
 
+    // Initial load with validation
     if (flashcards.length > 0) {
         loadFlashcard(currentFlashcardIndex);
     } else {
         console.error('No flashcards available');
     }
+
+    // Update progress on page load
+    updateProgress();
 })();
