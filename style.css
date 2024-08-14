@@ -152,6 +152,13 @@ button:disabled {
 }
 
 /* Social Buttons Styling */
+footer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
 .share-buttons {
     background-color: var(--bg-color-light);
     padding: 20px;
