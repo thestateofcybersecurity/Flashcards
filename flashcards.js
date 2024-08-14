@@ -1474,7 +1474,7 @@ const flashcards = [
     }
 ];
     
-let currentFlashcardIndex = 0;
+    let currentFlashcardIndex = 0;
 
     // Shuffle the flashcards array using the Fisher-Yates algorithm
     function shuffleArray(array) {
@@ -1547,7 +1547,7 @@ let currentFlashcardIndex = 0;
 
     function showAnswer() {
         answerElement.textContent = currentFlashcard.answer ? escapeHTML(currentFlashcard.answer) : 'No answer provided.';
-        answerElement.style.display = 'block'
+        answerElement.style.display = 'block';
     }
 
     function nextQuestion() {
