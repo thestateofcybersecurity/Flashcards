@@ -11,20 +11,24 @@
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 </head>
 <body>
-    <h1>CISSP Flashcards</h1>
-    <div id="flashcard-container">
-        <div class="flashcard" id="flashcard">
-            <div class="question" id="question"></div>
-            <div class="choices" id="choices">
-                <button class="choice-button" id="choice0"></button>
-                <button class="choice-button" id="choice1"></button>
-                <button class="choice-button" id="choice2"></button>
-                <button class="choice-button" id="choice3"></button>
+    <div id="container">
+        <h1>CISSP Flashcards</h1>
+        <div id="flashcard-container">
+            <div class="flashcard" id="flashcard">
+                <div class="question" id="question"></div>
+                <div class="choices" id="choices">
+                    <button class="choice-button" id="choice0"></button>
+                    <button class="choice-button" id="choice1"></button>
+                    <button class="choice-button" id="choice2"></button>
+                    <button class="choice-button" id="choice3"></button>
+                </div>
+                <div class="answer" id="answer"></div>
             </div>
+            <div id="result" class="result"></div>
+            <button id="show-answer">Show Answer</button>
+            <button id="next-question">Next Question</button>
         </div>
-        <div id="result" class="result"></div>
-        <button id="next-question">Next Question</button>
     </div>
-    <script src="flashcards.js" integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxKqyOk7RSKQpM5V8Gp/0zMwp4VGuAl" crossorigin="anonymous"></script>
+    <script src="flashcards.js"></script>
 </body>
 </html>
