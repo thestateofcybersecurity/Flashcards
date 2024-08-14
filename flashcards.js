@@ -1473,11 +1473,12 @@ const flashcards = [
         correctAnswer: "B. To identify, assess, and mitigate risks"
     }
 ];
-
+    
     let currentFlashcardIndex = 0;
     let currentFlashcard = flashcards[0];
 
     const questionElement = document.getElementById('question');
+    const answerElement = document.getElementById('answer');
     const choiceButtons = [
         document.getElementById('choice0'),
         document.getElementById('choice1'),
@@ -1485,6 +1486,7 @@ const flashcards = [
         document.getElementById('choice3')
     ];
     const resultElement = document.getElementById('result');
+    const showAnswerButton = document.getElementById('show-answer');
     const nextQuestionButton = document.getElementById('next-question');
 
     function loadFlashcard(index) {
@@ -1497,17 +1499,31 @@ const flashcards = [
         currentFlashcard = flashcards[index];
         resultElement.textContent = '';
         questionElement.textContent = escapeHTML(currentFlashcard.question);
-        
-        choiceButtons.forEach((button, i) => {
-            // Validate the number of choices matches the expected format
-            if (i < currentFlashcard.choices.length) {
-                button.textContent = escapeHTML(currentFlashcard.choices[i]);
-                button.disabled = false;
-                button.classList.remove('correct', 'incorrect');
-            } else {
-                console.error('Mismatch in number of choices for flashcard');
-            }
-        });
+
+        // Check if the flashcard is traditional or multiple-choice
+        if (currentFlashcard.choices) {
+            // Multiple-choice flashcard
+            answerElement.style.display = 'none';
+            showAnswerButton.style.display = 'none';
+            choiceButtons.forEach((button, i) => {
+                if (i < currentFlashcard.choices.length) {
+                    button.textContent = escapeHTML(currentFlashcard.choices[i]);
+                    button.style.display = 'inline-block';
+                    button.disabled = false;
+                    button.classList.remove('correct', 'incorrect');
+                } else {
+                    button.style.display = 'none';
+                }
+            });
+        } else {
+            // Traditional flashcard
+            answerElement.textContent = '';
+            answerElement.style.display = 'none';
+            showAnswerButton.style.display = 'inline-block';
+            choiceButtons.forEach(button => {
+                button.style.display = 'none';
+            });
+        }
     }
 
     function handleChoiceClick(event) {
@@ -1521,6 +1537,11 @@ const flashcards = [
         }
         // Disable all choice buttons after a selection is made
         choiceButtons.forEach(button => button.disabled = true);
+    }
+
+    function showAnswer() {
+        answerElement.textContent = currentFlashcard.answer ? escapeHTML(currentFlashcard.answer) : 'No answer provided.';
+        answerElement.style.display = 'block';
     }
 
     function nextQuestion() {
@@ -1546,6 +1567,7 @@ const flashcards = [
         button.addEventListener('click', handleChoiceClick);
     });
 
+    showAnswerButton.addEventListener('click', showAnswer);
     nextQuestionButton.addEventListener('click', nextQuestion);
 
     // Initial load with validation
