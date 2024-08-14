@@ -6,6 +6,8 @@
     --primary-color: #007bff;
     --button-bg: #4CAF50;
     --button-hover-bg: #45a049;
+    --category-bg: #4CAF50;
+    --category-hover-bg: #45a049;
     --border-radius: 12px;
     --padding: 20px;
     --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -18,6 +20,8 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -34,6 +38,38 @@ h1 {
     font-size: 2em;
     margin-bottom: 20px;
     transition: color 0.3s;
+}
+
+#categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.category-card {
+    background-color: var(--category-bg);
+    color: white;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+}
+
+.category-card:hover {
+    background-color: var(--category-hover-bg);
+    transform: translateY(-5px);
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em;
 }
 
 #flashcard-container {
@@ -121,12 +157,12 @@ button:disabled {
         color: var(--text-color-dark);
     }
 
-    #flashcard-container {
+    #flashcard-container, .category-card {
         background-color: var(--bg-color-dark);
         box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     }
 
-    .question, .answer {
+    .question, .answer, h1, h2 {
         color: var(--text-color-dark);
     }
 
@@ -140,5 +176,36 @@ button:disabled {
 
     .choice-button:hover, #show-answer:hover, #next-question:hover {
         background-color: #0b7dda;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--bg-color-light);
+        color: var(--text-color-light);
+    }
+
+    .category-card, #flashcard-container {
+        background-color: var(--category-bg);
+    }
+
+    .category-card:hover, #flashcard-container:hover {
+        background-color: var(--category-hover-bg);
+    }
+
+    .question, .answer, h1, h2 {
+        color: var(--text-color-light);
+    }
+
+    .result {
+        color: var(--text-color-light);
+    }
+
+    .choice-button, #show-answer, #next-question {
+        background-color: var(--button-bg);
+    }
+
+    .choice-button:hover, #show-answer:hover, #next-question:hover {
+        background-color: var(--button-hover-bg);
     }
 }
