@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CISSP Flashcards</title>
     <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 </head>
 <body>
     <h1>CISSP Flashcards</h1>
@@ -21,6 +25,6 @@
         <div id="result" class="result"></div>
         <button id="next-question">Next Question</button>
     </div>
-    <script src="flashcards.js"></script>
+    <script src="flashcards.js" integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxKqyOk7RSKQpM5V8Gp/0zMwp4VGuAl" crossorigin="anonymous"></script>
 </body>
 </html>
