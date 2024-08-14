@@ -4,14 +4,11 @@
     --bg-color-dark: #1a1a1a;
     --text-color-dark: #f0f0f0;
     --primary-color: #007bff;
-    --correct-color: #28a745;
-    --incorrect-color: #dc3545;
-    --card-bg-light: #ffffff;
-    --card-bg-dark: #2c2c2c;
+    --category-bg: #4CAF50;
+    --category-hover-bg: #45a049;
     --border-radius: 12px;
     --padding: 20px;
-    --box-shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
-    --box-shadow-dark: 0 4px 15px rgba(0, 0, 0, 0.3);
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -26,135 +23,75 @@ body {
 
 #container {
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     padding: var(--padding);
     box-sizing: border-box;
+    text-align: center;
     transition: background-color 0.3s, color 0.3s;
 }
 
 h1 {
-    font-size: 1.8em;
-    margin: 0 0 20px;
-    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
     transition: color 0.3s;
 }
 
-#flashcard-container {
-    background-color: var(--card-bg-light);
+#categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    background-color: var(--category-bg);
+    color: white;
     padding: var(--padding);
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow-light);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.flashcard {
-    margin-bottom: 20px;
-}
-
-.question, .answer {
-    font-size: 1.2em;
-    padding: 10px 0;
-    margin: 0;
-    transition: color 0.3s;
-}
-
-.answer {
-    display: none;
-    margin-top: 15px;
-}
-
-.choices {
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
 }
 
-.choice-button {
-    padding: 15px;
-    border: none;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 1em;
-    transition: background-color 0.3s;
+.category-card:hover {
+    background-color: var(--category-hover-bg);
+    transform: translateY(-5px);
 }
 
-.choice-button.correct {
-    background-color: var(--correct-color);
-}
-
-.choice-button.incorrect {
-    background-color: var(--incorrect-color);
-}
-
-.result {
-    margin-top: 10px;
-    font-size: 1.1em;
-    transition: color 0.3s;
-}
-
-button:disabled {
-    cursor: not-allowed;
-}
-
-#show-answer, #next-question {
-    width: 100%;
-    padding: 15px;
-    margin-top: 10px;
-    border: none;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 1em;
-    transition: background-color 0.3s;
+h2 {
+    margin: 0;
+    font-size: 1.5em;
 }
 
 @media (prefers-color-scheme: dark) {
-    body, #container {
+    body {
         background-color: var(--bg-color-dark);
         color: var(--text-color-dark);
     }
 
-    #flashcard-container {
-        background-color: var(--card-bg-dark);
-        box-shadow: var(--box-shadow-dark);
+    .category-card {
+        background-color: #2196F3;
     }
 
-    .question, .answer {
-        color: var(--text-color-dark);
-    }
-
-    .result {
-        color: var(--text-color-dark);
-    }
-
-    #next-question, #show-answer, .choice-button {
-        background-color: #00aaff;
+    .category-card:hover {
+        background-color: #0b7dda;
     }
 }
 
 @media (prefers-color-scheme: light) {
-    body, #container {
+    body {
         background-color: var(--bg-color-light);
         color: var(--text-color-light);
     }
 
-    #flashcard-container {
-        background-color: var(--card-bg-light);
-        box-shadow: var(--box-shadow-light);
+    .category-card {
+        background-color: var(--category-bg);
     }
 
-    .question, .answer {
-        color: var(--text-color-light);
-    }
-
-    .result {
-        color: var(--text-color-light);
-    }
-
-    #next-question, #show-answer, .choice-button {
-        background-color: var(--primary-color);
+    .category-card:hover {
+        background-color: var(--category-hover-bg);
     }
 }
