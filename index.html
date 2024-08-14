@@ -6,9 +6,6 @@
     <title>Flashcards Categories</title>
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 </head>
 <body>
     <div id="container">
@@ -43,42 +40,6 @@
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById('cissp-category').addEventListener('click', function() {
-            window.location.href = 'cissp.html';
-        });
-
-        document.getElementById('ceh-category').addEventListener('click', function() {
-            window.location.href = 'ceh.html';
-        });
-
-        document.getElementById('cybersecurity-category').addEventListener('click', function() {
-            window.location.href = 'cybersecurity.html';
-        });
-
-        document.getElementById('securityplus-category').addEventListener('click', function() {
-            window.location.href = 'securityplus.html';
-        });
-
-        document.getElementById('chfi-category').addEventListener('click', function() {
-            window.location.href = 'chfi.html';
-        });
-
-        document.getElementById('gsec-category').addEventListener('click', function() {
-            window.location.href = 'gsec.html';
-        });
-
-        document.getElementById('sscp-category').addEventListener('click', function() {
-            window.location.href = 'sscp.html';
-        });
-
-        document.getElementById('lpt-category').addEventListener('click', function() {
-            window.location.href = 'lpt.html';
-        });
-
-        document.getElementById('cysa-category').addEventListener('click', function() {
-            window.location.href = 'cysa.html';
-        });
-    </script>
+    <script src="categories.js"></script>
 </body>
 </html>
