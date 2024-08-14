@@ -1,6 +1,6 @@
 (() => {
 // Multiple-choice flashcards array
-const cehFlashcards = [
+const flashcards = [
     {
         question: "What is the primary purpose of a vulnerability scan?",
         choices: [
