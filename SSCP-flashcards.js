@@ -756,7 +756,7 @@ const flashcards = [
         choiceButtons.forEach(button => button.disabled = true);
 
         // Display the source of the question
-        sourceElement.textContent = currentFlashcard.source ? escapeHTML(currentFlashcard.source) : 'Source not available.';
+        sourceElement.innerHTML = currentFlashcard.source ? escapeHTML(currentFlashcard.source) : 'Source not available.';
         
         // Save progress to localStorage
         localStorage.setItem('userProgress', JSON.stringify(userProgress));
