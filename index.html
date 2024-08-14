@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CISSP Flashcards</title>
+    <title>Flashcards Categories</title>
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -12,24 +12,73 @@
 </head>
 <body>
     <div id="container">
-        <h1>CISSP Flashcards</h1>
-        <div id="flashcard-container">
-            <div class="flashcard" id="flashcard">
-                <div class="question" id="question"></div>
-                <div class="choices" id="choices">
-                    <button class="choice-button" id="choice0"></button>
-                    <button class="choice-button" id="choice1"></button>
-                    <button class="choice-button" id="choice2"></button>
-                    <button class="choice-button" id="choice3"></button>
-                </div>
-                <div class="answer" id="answer"></div>
+        <h1>Select a Category</h1>
+        <div id="categories-container">
+            <div class="category-card" id="cissp-category">
+                <h2>CISSP</h2>
             </div>
-            <div id="result" class="result"></div>
-            <button id="show-answer">Show Answer</button>
-            <button id="next-question">Next Question</button>
+            <div class="category-card" id="ceh-category">
+                <h2>CEH</h2>
+            </div>
+            <div class="category-card" id="cybersecurity-category">
+                <h2>Cybersecurity</h2>
+            </div>
+            <div class="category-card" id="securityplus-category">
+                <h2>Security+</h2>
+            </div>
+            <div class="category-card" id="chfi-category">
+                <h2>CHFI</h2>
+            </div>
+            <div class="category-card" id="gsec-category">
+                <h2>GSEC</h2>
+            </div>
+            <div class="category-card" id="sscp-category">
+                <h2>SSCP</h2>
+            </div>
+            <div class="category-card" id="lpt-category">
+                <h2>LPT</h2>
+            </div>
+            <div class="category-card" id="cysa-category">
+                <h2>CySA+</h2>
+            </div>
         </div>
-        <div id="progress"></div>
     </div>
-    <script src="flashcards.js"></script>
+    <script>
+        document.getElementById('cissp-category').addEventListener('click', function() {
+            window.location.href = 'cissp.html';
+        });
+
+        document.getElementById('ceh-category').addEventListener('click', function() {
+            window.location.href = 'ceh.html';
+        });
+
+        document.getElementById('cybersecurity-category').addEventListener('click', function() {
+            window.location.href = 'cybersecurity.html';
+        });
+
+        document.getElementById('securityplus-category').addEventListener('click', function() {
+            window.location.href = 'securityplus.html';
+        });
+
+        document.getElementById('chfi-category').addEventListener('click', function() {
+            window.location.href = 'chfi.html';
+        });
+
+        document.getElementById('gsec-category').addEventListener('click', function() {
+            window.location.href = 'gsec.html';
+        });
+
+        document.getElementById('sscp-category').addEventListener('click', function() {
+            window.location.href = 'sscp.html';
+        });
+
+        document.getElementById('lpt-category').addEventListener('click', function() {
+            window.location.href = 'lpt.html';
+        });
+
+        document.getElementById('cysa-category').addEventListener('click', function() {
+            window.location.href = 'cysa.html';
+        });
+    </script>
 </body>
 </html>
