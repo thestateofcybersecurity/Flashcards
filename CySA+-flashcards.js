@@ -742,6 +742,7 @@ const flashcards = [
     ];
     const resultElement = document.getElementById('result');
     const showAnswerButton = document.getElementById('show-answer');
+    const sourceElement = document.getElementById('source'); // New element for displaying the source
     const nextQuestionButton = document.getElementById('next-question');
     const progressElement = document.getElementById('progress');
 
@@ -798,6 +799,9 @@ const flashcards = [
         }
         choiceButtons.forEach(button => button.disabled = true);
 
+        // Display the source of the question
+        sourceElement.textContent = currentFlashcard.source ? escapeHTML(currentFlashcard.source) : 'Source not available.';
+        
         // Save progress to localStorage
         localStorage.setItem('userProgress', JSON.stringify(userProgress));
 
