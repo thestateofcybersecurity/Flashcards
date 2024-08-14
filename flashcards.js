@@ -1,3 +1,4 @@
+(() => {
 // Multiple-choice flashcards array
 const flashcards = [
     { question: "What is the primary goal of information security?", answer: "To protect the confidentiality, integrity, and availability of information." },
@@ -1473,52 +1474,84 @@ const flashcards = [
     }
 ];
 
-let currentFlashcardIndex = 0;
-let currentFlashcard;
+   let currentFlashcardIndex = 0;
+    let currentFlashcard = flashcards[0];
 
-const questionElement = document.getElementById('question');
-const choiceButtons = [
-    document.getElementById('choice0'),
-    document.getElementById('choice1'),
-    document.getElementById('choice2'),
-    document.getElementById('choice3')
-];
-const resultElement = document.getElementById('result');
-const nextQuestionButton = document.getElementById('next-question');
+    const questionElement = document.getElementById('question');
+    const choiceButtons = [
+        document.getElementById('choice0'),
+        document.getElementById('choice1'),
+        document.getElementById('choice2'),
+        document.getElementById('choice3')
+    ];
+    const resultElement = document.getElementById('result');
+    const nextQuestionButton = document.getElementById('next-question');
 
-function loadFlashcard(index) {
-    currentFlashcard = flashcards[index];
-    questionElement.textContent = currentFlashcard.question;
-    resultElement.textContent = '';
-    choiceButtons.forEach((button, i) => {
-        button.textContent = currentFlashcard.choices[i];
-        button.disabled = false;
-        button.classList.remove('correct', 'incorrect');
-    });
-}
+    function loadFlashcard(index) {
+        // Validate index to prevent out-of-bound access
+        if (index < 0 || index >= flashcards.length) {
+            console.error('Invalid flashcard index');
+            return;
+        }
 
-function handleChoiceClick(event) {
-    const selectedChoice = event.target.textContent;
-    if (selectedChoice === currentFlashcard.correctAnswer) {
-        resultElement.textContent = 'Correct!';
-        event.target.classList.add('correct');
-    } else {
-        resultElement.textContent = `Incorrect! The correct answer is ${currentFlashcard.correctAnswer}.`;
-        event.target.classList.add('incorrect');
+        currentFlashcard = flashcards[index];
+        resultElement.textContent = '';
+        questionElement.textContent = escapeHTML(currentFlashcard.question);
+        
+        choiceButtons.forEach((button, i) => {
+            // Validate the number of choices matches the expected format
+            if (i < currentFlashcard.choices.length) {
+                button.textContent = escapeHTML(currentFlashcard.choices[i]);
+                button.disabled = false;
+                button.classList.remove('correct', 'incorrect');
+            } else {
+                console.error('Mismatch in number of choices for flashcard');
+            }
+        });
     }
-    choiceButtons.forEach(button => button.disabled = true);
-}
 
-function nextQuestion() {
-    currentFlashcardIndex = (currentFlashcardIndex + 1) % flashcards.length;
-    loadFlashcard(currentFlashcardIndex);
-}
+    function handleChoiceClick(event) {
+        const selectedChoice = event.target.textContent;
+        if (selectedChoice === currentFlashcard.correctAnswer) {
+            resultElement.textContent = 'Correct!';
+            event.target.classList.add('correct');
+        } else {
+            resultElement.textContent = `Incorrect! The correct answer is ${escapeHTML(currentFlashcard.correctAnswer)}.`;
+            event.target.classList.add('incorrect');
+        }
+        // Disable all choice buttons after a selection is made
+        choiceButtons.forEach(button => button.disabled = true);
+    }
 
-choiceButtons.forEach(button => {
-    button.addEventListener('click', handleChoiceClick);
-});
+    function nextQuestion() {
+        currentFlashcardIndex = (currentFlashcardIndex + 1) % flashcards.length;
+        loadFlashcard(currentFlashcardIndex);
+    }
 
-nextQuestionButton.addEventListener('click', nextQuestion);
+    function escapeHTML(str) {
+        // Escapes any potential HTML tags or script content in user-supplied strings
+        return str.replace(/[&<>"']/g, function (char) {
+            const escapeChars = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return escapeChars[char];
+        });
+    }
 
-// Load the first flashcard
-loadFlashcard(currentFlashcardIndex);
+    choiceButtons.forEach(button => {
+        button.addEventListener('click', handleChoiceClick);
+    });
+
+    nextQuestionButton.addEventListener('click', nextQuestion);
+
+    // Initial load with validation
+    if (flashcards.length > 0) {
+        loadFlashcard(currentFlashcardIndex);
+    } else {
+        console.error('No flashcards available');
+    }
+})();
