@@ -1369,7 +1369,7 @@ const flashcards = [
     }
 
     function showAnswer() {
-        answerElement.textContent = currentFlashcard.answer ? escapeHTML(currentFlashcard.answer) : 'No answer provided.';
+        answerElement.textContent = currentFlashcard.answer ? currentFlashcard.answer : 'No answer provided.';
         answerElement.style.display = 'block';
     }
 
