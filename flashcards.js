@@ -1474,7 +1474,7 @@ const flashcards = [
     }
 ];
 
-   let currentFlashcardIndex = 0;
+    let currentFlashcardIndex = 0;
     let currentFlashcard = flashcards[0];
 
     const questionElement = document.getElementById('question');
