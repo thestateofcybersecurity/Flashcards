@@ -10,7 +10,7 @@ const flashcards = [
             "D. To oversee marketing campaigns"
         ],
         correctAnswer: "B. To implement, monitor, and administer IT infrastructure using information security policies and procedures",
-        source: "Source: [ISC2 SSCP Official Page](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Official Page</a>"
     },
     {
         question: "Which of the following is an example of a technical control?",
@@ -21,7 +21,7 @@ const flashcards = [
             "D. Physical security"
         ],
         correctAnswer: "A. Firewalls",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What does the CIA triad stand for in information security?",
@@ -32,7 +32,7 @@ const flashcards = [
             "D. Confidentiality, Integrity, Authorization"
         ],
         correctAnswer: "A. Confidentiality, Integrity, Availability",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes the principle of least privilege?",
@@ -43,7 +43,7 @@ const flashcards = [
             "D. Administrators have full access to all systems"
         ],
         correctAnswer: "A. Users are granted the minimum access necessary to perform their job functions",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the primary purpose of encryption?",
@@ -54,7 +54,7 @@ const flashcards = [
             "D. To ensure data redundancy"
         ],
         correctAnswer: "A. To ensure data confidentiality",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a characteristic of asymmetric encryption?",
@@ -65,7 +65,7 @@ const flashcards = [
             "D. It does not use keys"
         ],
         correctAnswer: "A. It uses different keys for encryption and decryption",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the purpose of a digital signature?",
@@ -76,7 +76,7 @@ const flashcards = [
             "D. To monitor network traffic"
         ],
         correctAnswer: "A. To verify the authenticity and integrity of a message",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is an example of a physical security control?",
@@ -87,7 +87,7 @@ const flashcards = [
             "D. Access control lists"
         ],
         correctAnswer: "A. Security guards",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the primary purpose of an Intrusion Detection System (IDS)?",
@@ -98,7 +98,7 @@ const flashcards = [
             "D. To encrypt data"
         ],
         correctAnswer: "A. To detect and alert on unauthorized access or attacks",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes a vulnerability scan?",
@@ -109,7 +109,7 @@ const flashcards = [
             "D. A way to create backups"
         ],
         correctAnswer: "A. A process used to identify security weaknesses in a system",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a common method used to secure wireless networks?",
@@ -120,7 +120,7 @@ const flashcards = [
             "D. Disabling SSID broadcast"
         ],
         correctAnswer: "A. WPA2 encryption",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the purpose of a Security Information and Event Management (SIEM) system?",
@@ -131,7 +131,7 @@ const flashcards = [
             "D. To manage user identities"
         ],
         correctAnswer: "A. To monitor and analyze security events in real-time",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes multi-factor authentication?",
@@ -142,7 +142,7 @@ const flashcards = [
             "D. A security mechanism that relies on physical security measures"
         ],
         correctAnswer: "A. A security mechanism that requires two or more forms of authentication",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a hashing algorithm?",
@@ -153,7 +153,7 @@ const flashcards = [
             "D. DES"
         ],
         correctAnswer: "A. SHA-256",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the primary purpose of data encryption?",
@@ -164,7 +164,7 @@ const flashcards = [
             "D. To authenticate users"
         ],
         correctAnswer: "A. To protect data confidentiality",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes the principle of defense in depth?",
@@ -175,7 +175,7 @@ const flashcards = [
             "D. Ensuring all users have administrator privileges"
         ],
         correctAnswer: "A. Implementing multiple layers of security controls to protect assets",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is an effective method to prevent phishing attacks?",
@@ -186,7 +186,7 @@ const flashcards = [
             "D. Regularly updating software"
         ],
         correctAnswer: "A. Educating users on recognizing phishing attempts",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a method used to ensure data integrity?",
@@ -197,7 +197,7 @@ const flashcards = [
             "D. Tokenization"
         ],
         correctAnswer: "A. Hashing",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the primary purpose of a firewall?",
@@ -208,7 +208,7 @@ const flashcards = [
             "D. To back up data"
         ],
         correctAnswer: "A. To filter incoming and outgoing network traffic",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is an example of a social engineering attack?",
@@ -219,7 +219,7 @@ const flashcards = [
             "D. Man-in-the-middle attack"
         ],
         correctAnswer: "A. Phishing",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes a man-in-the-middle attack?",
@@ -230,7 +230,7 @@ const flashcards = [
             "D. An attacker floods a network with excessive traffic"
         ],
         correctAnswer: "A. An attacker intercepts and potentially alters communications between two parties",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a common method used to protect against SQL injection attacks?",
@@ -241,7 +241,7 @@ const flashcards = [
             "D. Regular backups"
         ],
         correctAnswer: "A. Input validation",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes a brute force attack?",
@@ -252,7 +252,7 @@ const flashcards = [
             "D. A method of disguising malware as legitimate software"
         ],
         correctAnswer: "A. A method of guessing passwords by trying all possible combinations",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a common method used to secure data at rest?",
@@ -263,7 +263,7 @@ const flashcards = [
             "D. Tokenization"
         ],
         correctAnswer: "A. Encryption",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What does the term 'zero-day vulnerability' refer to?",
@@ -274,7 +274,7 @@ const flashcards = [
             "D. A vulnerability that is widely exploited"
         ],
         correctAnswer: "A. A vulnerability that is unknown to the vendor and has no patch available",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a key feature of a honeypot?",
@@ -285,7 +285,7 @@ const flashcards = [
             "D. It performs regular backups"
         ],
         correctAnswer: "A. It attracts attackers to a decoy system",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the purpose of a digital certificate?",
@@ -296,7 +296,7 @@ const flashcards = [
             "D. To monitor system performance"
         ],
         correctAnswer: "A. To verify the identity of a user or device",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a principle of information security?",
@@ -307,7 +307,7 @@ const flashcards = [
             "D. Consolidation"
         ],
         correctAnswer: "A. Confidentiality",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes the purpose of an access control list (ACL)?",
@@ -318,7 +318,7 @@ const flashcards = [
             "D. To detect malware"
         ],
         correctAnswer: "A. To define which users or system processes are granted access to objects",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a common method of ensuring data availability?",
@@ -329,7 +329,7 @@ const flashcards = [
             "D. Access control"
         ],
         correctAnswer: "A. Data replication",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is an example of an endpoint security solution?",
@@ -340,7 +340,7 @@ const flashcards = [
             "D. IDS/IPS"
         ],
         correctAnswer: "A. Antivirus software",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the primary purpose of incident response?",
@@ -351,7 +351,7 @@ const flashcards = [
             "D. To conduct a vulnerability assessment"
         ],
         correctAnswer: "A. To contain and mitigate the impact of a security incident",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a method used to protect against social engineering attacks?",
@@ -362,7 +362,7 @@ const flashcards = [
             "D. Implementing encryption"
         ],
         correctAnswer: "A. Educating users on security best practices",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the purpose of a VPN in a network?",
@@ -373,7 +373,7 @@ const flashcards = [
             "D. To manage user identities"
         ],
         correctAnswer: "A. To create a secure, encrypted connection over a less secure network",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes the concept of least privilege?",
@@ -384,7 +384,7 @@ const flashcards = [
             "D. Restricting access to administrators only"
         ],
         correctAnswer: "A. Providing users with the minimum level of access required to perform their jobs",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the primary purpose of a vulnerability management program?",
@@ -395,7 +395,7 @@ const flashcards = [
             "D. To monitor network traffic"
         ],
         correctAnswer: "A. To identify, prioritize, and remediate vulnerabilities",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes a penetration test?",
@@ -406,7 +406,7 @@ const flashcards = [
             "D. A method of managing user accounts"
         ],
         correctAnswer: "A. A method of evaluating the security of a system by simulating an attack",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a method used to obscure the meaning of code?",
@@ -417,7 +417,7 @@ const flashcards = [
             "D. Compression"
         ],
         correctAnswer: "A. Obfuscation",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a method of ensuring data integrity?",
@@ -428,7 +428,7 @@ const flashcards = [
             "D. Tokenization"
         ],
         correctAnswer: "A. Hashing",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a method of securing data in transit?",
@@ -439,7 +439,7 @@ const flashcards = [
             "D. Tokenization"
         ],
         correctAnswer: "A. Encryption",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a characteristic of an Advanced Persistent Threat (APT)?",
@@ -450,7 +450,7 @@ const flashcards = [
             "D. Attacks using social engineering techniques"
         ],
         correctAnswer: "A. Long-term, targeted attacks",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a principle of network security?",
@@ -461,7 +461,7 @@ const flashcards = [
             "D. Least resistance"
         ],
         correctAnswer: "A. Defense in depth",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is an essential component of an incident response plan?",
@@ -472,7 +472,7 @@ const flashcards = [
             "D. Performing vulnerability scans"
         ],
         correctAnswer: "A. Identifying and containing the threat",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes a social engineering attack?",
@@ -483,7 +483,7 @@ const flashcards = [
             "D. Injecting malicious code into a web application"
         ],
         correctAnswer: "A. Tricking users into revealing confidential information",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is an effective method for protecting data against loss?",
@@ -494,7 +494,7 @@ const flashcards = [
             "D. Tokenization"
         ],
         correctAnswer: "A. Regular backups",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes the concept of defense in depth?",
@@ -505,7 +505,7 @@ const flashcards = [
             "D. Backing up data regularly"
         ],
         correctAnswer: "A. Using multiple layers of security to protect resources",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is an effective method to prevent phishing attacks?",
@@ -516,7 +516,7 @@ const flashcards = [
             "D. Regularly updating software"
         ],
         correctAnswer: "A. Educating users on recognizing phishing attempts",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "What is the primary purpose of a penetration test?",
@@ -527,7 +527,7 @@ const flashcards = [
             "D. To back up data"
         ],
         correctAnswer: "A. To identify and exploit vulnerabilities in a system",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes a VPN?",
@@ -538,7 +538,7 @@ const flashcards = [
             "D. A method for encrypting emails"
         ],
         correctAnswer: "A. A secure connection over a public network",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a primary objective of reconnaissance in penetration testing?",
@@ -549,7 +549,7 @@ const flashcards = [
             "D. To recover lost data"
         ],
         correctAnswer: "A. To gather information about the target",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a common indicator of compromise (IoC)?",
@@ -560,7 +560,7 @@ const flashcards = [
             "D. All of the above"
         ],
         correctAnswer: "D. All of the above",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes the principle of least privilege?",
@@ -571,7 +571,7 @@ const flashcards = [
             "D. Restricting access to administrators only"
         ],
         correctAnswer: "A. Providing users with the minimum level of access required to perform their jobs",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is an example of a client-side attack?",
@@ -582,7 +582,7 @@ const flashcards = [
             "D. Brute force"
         ],
         correctAnswer: "A. Cross-site scripting (XSS)",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is an example of multi-factor authentication?",
@@ -593,7 +593,7 @@ const flashcards = [
             "D. A password and a PIN"
         ],
         correctAnswer: "A. A password and a fingerprint",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes the concept of defense in depth?",
@@ -604,7 +604,7 @@ const flashcards = [
             "D. Backing up data regularly"
         ],
         correctAnswer: "A. Using multiple layers of security to protect resources",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes the purpose of social engineering in penetration testing?",
@@ -615,7 +615,7 @@ const flashcards = [
             "D. To monitor network traffic"
         ],
         correctAnswer: "A. To trick users into revealing sensitive information",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following best describes a zero-day vulnerability?",
@@ -626,7 +626,7 @@ const flashcards = [
             "D. A vulnerability that is actively being exploited"
         ],
         correctAnswer: "A. A vulnerability that is unknown to the vendor",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a method of securing data in transit?",
@@ -637,7 +637,7 @@ const flashcards = [
             "D. Tokenization"
         ],
         correctAnswer: "A. Encryption",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a method of ensuring data integrity?",
@@ -648,7 +648,7 @@ const flashcards = [
             "D. Tokenization"
         ],
         correctAnswer: "A. Hashing",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a method used to ensure data integrity?",
@@ -659,7 +659,7 @@ const flashcards = [
             "D. Tokenization"
         ],
         correctAnswer: "A. Hashing",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     },
     {
         question: "Which of the following is a method of securing data in transit?",
@@ -670,7 +670,7 @@ const flashcards = [
             "D. Tokenization"
         ],
         correctAnswer: "A. Encryption",
-        source: "Source: [ISC2 SSCP Study Guide](https://www.isc2.org/Certifications/SSCP)"
+        source: "Source: <a href='https://www.isc2.org/Certifications/SSCP' target='_blank'>ISC2 SSCP Study Guide</a>"
     }
 ];
   
